@@ -1,0 +1,69 @@
+
+.gform_fields {
+  @extend .list-unstyled;
+  //@extend .row;
+ 
+  input[type=text],
+  input[type=url],
+  input[type=email],
+  input[type=tel],
+  input[type=number],
+  input[type=password], select, textarea {
+    @extend .form-control;
+  }
+ 
+  textarea {
+    height: auto;
+  }
+  display: block;
+ 
+}
+ 
+.gfield_description {
+  @extend .alert;
+}
+ 
+.validation_error {
+  @extend .alert;
+  @extend .alert-danger;
+}
+ 
+.validation_message {
+  @extend .alert;
+  @extend .alert-success;
+}
+ 
+.gform_button {
+  @extend .btn;
+  @extend .btn-primary;
+}
+ 
+.gfield_required {
+  //color: $alert-danger-text;
+}
+ 
+.gform_wrapper ul.gfield_radio li, .gform_wrapper ul.gfield_checkbox li {
+  @extend .form-check;
+}
+
+.gform_wrapper ul.gfield_radio, .gform_wrapper ul.gfield_checkbox {
+  padding: 0;
+  li { 
+    padding: 0;
+    label {
+      margin-left:5px;
+    }
+  }
+}
+
+.gform_wrapper ul.gfield_radio li label {
+  margin-left:10px;
+}
+ 
+.gform_validation_container {
+  display: none;
+}
+ 
+.gfield_error .ginput_container {
+  margin-bottom: 10px;
+}

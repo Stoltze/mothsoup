@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":["jQuery","noConflict"],"mappings":"YAAAA,QAAOC","file":"app-min.js","sourcesContent":["jQuery.noConflict();"]}
